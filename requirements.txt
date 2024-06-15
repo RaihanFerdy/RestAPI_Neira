@@ -1,0 +1,8 @@
+Flask
+Flask_Cors
+groq
+keras
+Pillow
+python-dotenv
+Requests
+Tensorflow
