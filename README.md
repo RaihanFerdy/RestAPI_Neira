@@ -73,11 +73,13 @@ docker ps
 ### API Testing with Postman
 1. Open Postman, then add a new session in your workspace.
    ![](https://i.imgur.com/gDbWIW1.png)
-2. Change the method to POST and enter http://127.0.0.1:5000, appending /result to the end of the URL.
+2. Change the method to POST and enter `http://127.0.0.1:5000` appending `/result` to the end of the URL.
    ![](https://i.imgur.com/ClL1StD.png)
 3. Select the `Body` tab and choose `form-data`. Change the `key` type from `text` to `file` for the file you want to upload.
    ![](https://i.imgur.com/9ykMx3E.png)
    ![](https://i.imgur.com/BZI6fIh.png)
 4. Send the request and view the response from the API.
    ![](https://i.imgur.com/xprYr4U.png)
+5. Send the request to Deployment API `https://neira-api.1hs5xuud6atv.us-south.codeengine.appdomain.cloud` and appending `/result` to the end of the URL
+   ![](https://i.imgur.com/7YZjoXW.png)
 ---
