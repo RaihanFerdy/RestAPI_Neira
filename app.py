@@ -63,7 +63,7 @@ def upload():
                 img = preprocessing_input(img_path)
                 payload_scoring = {"input_data": [{"values": img.tolist()}]}
                 header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltoken}
-                scoring_url = os.getenv("END_POINT")
+                scoring_url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/restapi/predictions?version=2021-05-01"
                 
                 # response result from IBM
                 response_scoring = requests.post(scoring_url, json=payload_scoring, headers=header)
